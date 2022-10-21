@@ -1,0 +1,56 @@
+    <form action="" method="post">
+        <h1>Inscribirse</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Tu información básica</legend>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+          
+          <label>Edad:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Menor de 13 años</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 años a más</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Tu perfil</legend>
+          <label for="bio">Biografía:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="job">Puesto de trabajo:</label>
+        <select id="job" name="user_job">
+          <optgroup label="Web">
+            <option value="frontend_developer">Desarrollador Front-End </option>
+            <option value="php_developor">Desarrollador PHP  </option>
+            <option value="python_developer">Desarrollador Python </option>
+            <option value="rails_developer"> Desarrollador Rails</option>
+            <option value="web_designer">Diseñador Web</option>
+            <option value="WordPress_developer">Desarrollador WordPress</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="Android_developer">Desarrollador Androild </option>
+            <option value="iOS_developer">Desarrollador iOS</option>
+            <option value="mobile_designer">Diseñador Mobile</option>
+          </optgroup>
+          <optgroup label="Business">
+            <option value="business_owner">Business Owner</option>
+            <option value="freelancer">Freelancer</option>
+          </optgroup>
+    
+        </select>
+        
+          <label>Intereses:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Desarrollo</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Diseño</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Negocio</label>
+        
+        </fieldset>
+        <button type="submit">Inscribirse</button>
+      </form>
+      

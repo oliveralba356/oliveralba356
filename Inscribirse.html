@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="Stylesheet" href="css/estilosmodal.css"
+</head>
+
+  <body>
+    <form action="InscribirseRespuesta.html" method="post">
+      <h1>Inscribirse</h1>
+      
+      <fieldset>
+        <legend><span class="number">1</span>Tu información básica</legend>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name">
+        
+        <label for="mail">Email:</label>
+        <input type="email" id="mail" name="user_email">
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="user_password">
+        
+        <label>Edad:</label>
+        <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Menor de 13 años</label><br>
+        <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">13 años a más</label>
+      </fieldset>
+      <div class="btn-group">
+        <button type="button" class="open-modal" data-open="modal1">
+          Términos y Condiciones
+        </button>
+      </div>
+    <div class="btn-group">
+        <button type="button" class="open-modal" data-open="modal1">
+          <a style="color:rgb(255, 255, 255);" href="InscribirseRespuesta.html"> Inscribirse </a>
+        </button>
+    </div>
+
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            Términos y Condiciones
+          </header>
+          <section class="modal-content">
+            <p><strong> ESC, si desea salir </strong></p>
+            <p>Al darle click en Inscribirse estará aceptando los términos y condiciones antes mencionados</p>
+            <p>Si está de acuerdo, darle click en "Incribirse" de lo contrario, precione la tecla "ESC" para cerra la ventana.</p>
+             
+          </section>
+          <footer class="modal-footer">
+            si acepta los terminos y condiciones haga click en el voton de aceptar
+          </footer>
+        </div>
+    </div>
+     
+      <script src="js/modal.js">
+          
+      </script>
+          <footer class="modal-footer"></footer>
+          <center>
+            <a style="color:black;" href="index.html"> Página Principal </a>
+        </center>
+        </footer>
+      </form>
+</body>
+</html>
